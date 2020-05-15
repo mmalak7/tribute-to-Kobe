@@ -307,7 +307,7 @@ header {
                 top: 20%;
                 transform: translateX(-50%);
             }
-            
+
             @include media('>phone', '<=425px') {
                 position: absolute;
                 width: 100%;
@@ -369,3 +369,291 @@ header {
     }
 }
 
+//Carrer section
+
+.carrer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    background-color: $black;
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+
+        .kobe-image-carrier {
+            z-index: 1;
+            margin: 0 auto;
+
+            @include media('<=phone') {
+                width: 100%;
+                position: absolute;
+            }
+
+            @include media('>phone', '<=425px') {
+                width: 100%;
+                position: absolute;
+            }
+
+            @include media('>425px', '<=tablet') {
+                width: 100%;
+                position: absolute;
+            }
+
+            @include media('>tablet', '<=desktop') {
+                width: 100%;
+                position: absolute;
+            }
+
+            @include media('>desktop', '<=1440px') {
+                width: 100%;
+                transform: translate(-15%, 8%) scale(0.85);
+            }
+
+            @include media('>1440px') {
+                width: 100%;
+                transform: translate(-20%, 8%) scale(0.60);
+            }
+        }
+
+        .carrer-stats {
+
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            align-items: flex-end;
+
+            @include media('<=phone') {
+                color: $white;
+                z-index: 2;
+                font-size: 2rem;
+                text-align: center;
+                transform: translateY(300px);
+                width: 100%;
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 4rem;
+                }
+
+                .ppg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 200px;
+                    height: 200px;
+                    display: none;
+                }
+            }
+
+            @include media('>phone', '<=425px') {
+                color: $white;
+                z-index: 2;
+                font-size: 2rem;
+                text-align: center;
+                // margin-left: auto;
+                transform: translateY(300px);
+                width: 100%;
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 4rem;
+                }
+
+                .ppg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 200px;
+                    height: 200px;
+                    display: none;
+                }
+            }
+
+            @include media('>425px', '<=tablet') {
+                color: $white;
+                z-index: 2;
+                font-size: 2rem;
+                text-align: center;
+                // margin-left: auto;
+                transform: translateY(300px);
+                width: 100%;
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 4rem;
+                }
+
+                .ppg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 200px;
+                    height: 200px;
+                    display: none;
+                }
+            }
+
+            @include media('>tablet', '<=desktop') {
+                color: $white;
+                z-index: 2;
+                font-size: 2rem;
+                text-align: center;
+                // margin-left: auto;
+                transform: translateY(300px);
+                width: 100%;
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 4rem;
+                }
+
+                .ppg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 200px;
+                    height: 200px;
+                    display: none;
+                }
+            }
+
+            @include media('>desktop', '<=1440px') {
+                color: $white;
+                z-index: 2;
+                font-size: 2.5rem;
+                text-align: right;
+                margin-left: auto;
+                transform: translate(-100px, 50px);
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 5rem;
+                }
+
+                .ppg {
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 280px;
+                    height: 280px;
+                }
+            }
+
+            @include media('>1440px') {
+                color: $white;
+                z-index: 2;
+                font-size: 2.75rem;
+                text-align: right;
+                margin-left: auto;
+                transform: translate(-200px, 50px);
+                line-height: 1.2;
+
+                .stats {
+                    width: 100%;
+                    font-size: 6.75rem;
+                }
+
+                .ppg {
+                    width: 100%;
+                    padding-top: 45px;
+                }
+
+                .rpg {
+                    padding-top: 45px;
+                }
+
+                .apg {
+                    padding-top: 45px;
+                }
+
+                .lakers-number {
+                    padding-top: 35px;
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+
+
+
+            span {
+                color: $purple;
+            }
+
+        }
+    }
+}
