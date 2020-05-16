@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import Photo from '../images/basketball.png';
 
 const Header = () => (
@@ -7,7 +7,7 @@ const Header = () => (
     <div className='container'>
       <div className='inner-header'>
         <div className='nav-home'>
-          <Link to='/'>Kobe <span>8</span> / <span>24</span></Link>
+          <Link to='/home'>Kobe <span>8</span> / <span>24</span></Link>
         </div>
         <div className='navigation'>
           <nav>

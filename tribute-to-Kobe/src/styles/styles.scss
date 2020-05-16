@@ -67,6 +67,8 @@ body {
     }
 }
 
+//Header
+
 header {
     height: 80px;
     margin-top: 35px;
@@ -228,6 +230,136 @@ header {
         }
     }
 }
+
+//Hamburger
+.hamburger-menu {
+    // display: none;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .menu-second-back-color {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: $purple;
+        z-index: -1;
+    }
+
+    .menu-layer {
+        position: relative;
+        background-color: $black;
+        height: 100%;
+        overflow: hidden;
+
+        .menu-image-back {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+
+        .wrapper {
+            position: relative;
+
+            .kobe-image-hamburger {
+                z-index: -1;
+                margin: 0 auto;
+                width: 100%;
+                transform: translate(-20%, -37%) scale(.35);
+            }
+
+            .menu-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 200px;
+                align-content: flex-end;
+
+                nav {
+                    display: block;
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            list-style: none;
+                            font-size: 8rem;
+                            font-weight: 700;
+                            cursor: pointer;
+                            height: 135px;
+                            overflow: hidden;
+                            position: relative;
+                            width: 750px;
+                            margin-top: 30px;
+
+                            a {
+
+                                position: absolute;
+                                color: $white;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: $purple;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-moments {
+                position: absolute;
+                top: 750px;
+                right: 1000px;
+
+                .moments {
+                    width: 850px;
+                    position: absolute;
+                    bottom: -80px;
+                    color: $white;
+                    margin-top: 16px;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+
+                    span {
+                        &:last-child {
+                            position: relative;
+                            margin-right: 124px;
+                        }
+
+                        cursor: pointer;
+                        margin: 0 32px;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            background-color: $purple;
+                            padding: 8px 24px;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 //Home section
 
@@ -655,5 +787,68 @@ header {
             }
 
         }
+    }
+}
+
+//Awards section
+
+.awards {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    background-color: $black;
+
+    .container {
+
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+
+        .kobe-image-awards {
+            z-index: 1;
+            margin: 0 auto;
+
+            @include media('<=phone') {
+                width: 100%;
+                position: absolute;
+                transform: translateY(0%) scale(3);
+            }
+
+            @include media('>phone', '<=425px') {
+                width: 100%;
+                position: absolute;
+                transform: translateY(10%) scale(2.7);
+            }
+
+            @include media('>425px', '<=tablet') {
+                width: 100%;
+                position: absolute;
+                transform: translateY(25%) scale(2.4);
+            }
+
+            @include media('>tablet', '<=desktop') {
+                width: 100%;
+                position: absolute;
+            }
+
+            @include media('>desktop', '<=1440px') {
+                width: 100%;
+                position: absolute;
+                transform: translateY(15%) scale(1);
+            }
+
+            @include media('>1440px') {
+                width: 100%;
+                position: absolute;
+                transform: translateY(20%) scale(1);
+            }
+        }
+
+        .carrer-awards {}
     }
 }
