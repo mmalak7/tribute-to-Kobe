@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from "gatsby";
 import { useStaticQuery, graphql } from 'gatsby';
+
 import Img from 'gatsby-image';
 import gsap from 'gsap';
 
@@ -50,6 +51,7 @@ const Hamburger = ({ state }) => {
 
 
     useEffect(() => {
+
         if (state.clicked === false) {
             //close menu
             gsap.to([revealMenu, revealMenuBackground], {

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+// import { globalHistory } from '@reach/router/lib/history'
 import { Link } from "gatsby";
 import Hamburger from "../components/Hamburger";
 
-const Header = ({ history }) => {
+const Header = () => {
 
   const [state, setState] = useState({
     inital: false,
