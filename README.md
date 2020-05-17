@@ -1,5 +1,5 @@
 # Tribute to Kobe
-frontend implementatin using gatsby.js
+frontend implementation using gatsby.js
 
 ## Software Used
 
@@ -10,9 +10,9 @@ frontend implementatin using gatsby.js
 
 ### Project learning goals
 
-* Implementing smooth transisiton using gsap
-* React Hooks component lifecycle & usage
+* Get familiar with Gatsby (pros & cons) in different projects
 * Route type in Gatsby Js
+* Implementing smooth transisiton using gsap
 * RWD aspects
 
 ### Preview
