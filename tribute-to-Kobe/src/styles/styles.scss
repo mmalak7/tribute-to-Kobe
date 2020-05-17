@@ -82,6 +82,8 @@ header {
         align-items: center;
         justify-content: space-between;
         height: 80px;
+        z-index: 10;
+
 
         @include media('<=phone') {
             display: flex;
@@ -132,12 +134,14 @@ header {
         }
 
         .nav-home {
+            z-index: 10;
+
             a {
                 font-weight: 500;
                 text-decoration: none;
                 letter-spacing: 1.5px;
                 font-size: 1.875rem;
-                // color: $white;
+                color: $white;
 
                 @include media('<=phone') {
                     font-size: 1.3rem;
@@ -166,13 +170,15 @@ header {
         }
 
         .navigation {
+            z-index: 10;
+
             nav {
                 a {
                     margin: 0 150px;
                     text-decoration: none;
                     letter-spacing: 1.75px;
                     font-size: 1.25rem;
-                    // color: $white;
+                    color: $white;
 
                     @include media('<=phone') {
                         margin: 0;
@@ -202,29 +208,17 @@ header {
                         letter-spacing: 1.75px;
                         font-size: 1.25rem;
                     }
-
-
-                    &:last-child {
-                        margin-right: 0px;
-
-                        @include media('<=phone') {
-                            display: block;
-                        }
-
-                        @include media('>phone', '<=425px') {
-                            display: block;
-                        }
-
-                        @include media('>425px', '<=tablet') {
-                            display: block;
-                        }
-                    }
                 }
 
-                img {
-                    width: 36px;
-                    height: 36px;
-                    // margin-left: 100px;
+                button {
+                    margin-left: 150px;
+                    font-family: $font;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    font-size: 1.25rem;
+                    letter-spacing: 1.25px;
+                    color: $white;
                 }
             }
         }
@@ -233,7 +227,7 @@ header {
 
 //Hamburger
 .hamburger-menu {
-    // display: none;
+    display: none;
     z-index: 9;
     top: 0;
     bottom: 0;
@@ -274,6 +268,7 @@ header {
 
         .wrapper {
             position: relative;
+            // display: flex;
 
             .kobe-image-hamburger {
                 z-index: -1;
@@ -289,6 +284,8 @@ header {
                 position: absolute;
                 right: 0;
                 top: 200px;
+                text-align: right;
+                margin-right: 350px;
                 align-content: flex-end;
 
                 nav {
@@ -297,6 +294,7 @@ header {
                     ul {
                         padding: 0;
                         margin: 0;
+                        // overflow: hidden;
 
                         li {
                             list-style: none;
@@ -306,12 +304,12 @@ header {
                             height: 135px;
                             overflow: hidden;
                             position: relative;
-                            width: 750px;
+                            width: auto;
                             margin-top: 30px;
 
                             a {
 
-                                position: absolute;
+                                // position: absolute;
                                 color: $white;
                                 text-decoration: none;
 

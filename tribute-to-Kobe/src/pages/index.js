@@ -1,12 +1,10 @@
 import React from "react";
 import '../styles/styles.scss';
-import Home from '../pages/home';
-import Hamburger from "../components/Hamburger";
+import Header from "../components/header";
 
 const IndexPage = () => (
   <>
-  {/* <Home /> */}
-  <Hamburger />
+    <Header />
   </>
 )
 
